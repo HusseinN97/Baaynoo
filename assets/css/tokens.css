@@ -1,0 +1,50 @@
+/* Design Tokens — Light theme (Red/White/Black) */
+:root {
+  color-scheme: light;
+  --header-height: 100px;
+  /* Palette */
+  --color-bg: #ffffff;            /* page background */
+  --color-surface: #ffffff;       /* cards/nav */
+  --color-elevated: #ffffff;      /* modals/overlays */
+  --color-text: #111111;          /* primary text */
+  --color-muted: #646464;         /* secondary text */
+  --color-border: #e6e6e6;        /* separators */
+  --color-accent: #D11A2A;        /* brand red */
+  --color-accent-2: #9B111E;      /* deep red */
+  --color-success: #2e7d32;
+  --color-warning: #b26a00;
+  --color-error: #c62828;
+
+  /* Typography */
+  --font-heading: "Playfair Display", "Times New Roman", serif;
+  --font-body: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  /* Sizing & Spacing */
+  --radius-sm: 8px;
+  --radius: 12px;
+  --radius-lg: 16px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --container: 1200px;
+
+  /* Effects */
+  --shadow-focus: 0 0 0 3px rgba(209, 26, 42, 0.25);
+  --shadow-soft: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* RTL-aware logical properties (use inline/block) */
+html[dir='rtl'] {
+  direction: rtl;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --motion: 0; }
+}
